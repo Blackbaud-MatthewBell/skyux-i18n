@@ -26,12 +26,22 @@ import {
   SkyAppResourcesService
 } from './resources.service';
 
+import {
+  SkyLibResourcesPipe
+} from './lib-resources.pipe';
+
+import {
+  SkyLibResourcesService
+} from './lib-resources.service';
+
 @NgModule({
   declarations: [
-    SkyAppResourcesPipe
+    SkyAppResourcesPipe,
+    SkyLibResourcesPipe
   ],
   exports: [
-    SkyAppResourcesPipe
+    SkyAppResourcesPipe,
+    SkyLibResourcesPipe
   ],
   imports: [
     HttpModule
@@ -45,7 +55,8 @@ import {
     },
     SkyAppHostLocaleProvider,
     SkyAppResourcesService,
-    SkyAppWindowRef
+    SkyAppWindowRef,
+    SkyLibResourcesService
   ]
 })
 export class SkyI18nModule { }
