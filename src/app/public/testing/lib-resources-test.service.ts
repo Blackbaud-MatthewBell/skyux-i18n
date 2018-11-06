@@ -9,7 +9,7 @@ import {
 import {
   SkyAppLocaleInfo,
   SkyAppResources
-} from '@skyux/i18n';
+} from '../modules';
 
 import {
   Observable

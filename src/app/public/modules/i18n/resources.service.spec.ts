@@ -23,7 +23,7 @@ import 'rxjs/add/observable/throw';
 
 import {
   SkyAppHostLocaleProvider
-} from '@blackbaud/skyux-builder/runtime/i18n';
+} from '@blackbaud/skyux-builder/runtime/i18n/host-locale-provider';
 
 import {
   SkyAppAssetsService
